@@ -13,7 +13,11 @@ public class Reporter {
 	private static ExtentHtmlReporter htmlReporter;
 	static ExtentReports extent;
 	static ExtentTest test;
-	 
+	
+	/**
+	 * 
+	 * @return
+	 */
     public synchronized static ExtentHtmlReporter generateReportFile(){
         if(htmlReporter == null){
             String workingDir = System.getProperty("user.dir");
