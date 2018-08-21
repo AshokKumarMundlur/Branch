@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="94746" started-at="2018-08-21T09:28:30Z" finished-at="2018-08-21T09:30:05Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="94746" started-at="2018-08-21T09:28:30Z" finished-at="2018-08-21T09:30:05Z">
+      <class name="com.testmethods.TestClass">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.testmethods.TestClass@d2cc05a]" name="beforeTest" is-config="true" duration-ms="6165" started-at="2018-08-21T02:28:30Z" finished-at="2018-08-21T02:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="searchBranchWebsite()[pri:0, instance:com.testmethods.TestClass@d2cc05a]" name="searchBranchWebsite" duration-ms="10676" started-at="2018-08-21T02:28:36Z" finished-at="2018-08-21T02:28:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBranchWebsite -->
+        <test-method status="PASS" signature="validateEmployeeCount()[pri:0, instance:com.testmethods.TestClass@d2cc05a]" name="validateEmployeeCount" duration-ms="28677" started-at="2018-08-21T02:28:47Z" depends-on-methods="com.testmethods.TestClass.searchBranchWebsite" finished-at="2018-08-21T02:29:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmployeeCount -->
+        <test-method status="PASS" signature="validateEmployeeNames()[pri:0, instance:com.testmethods.TestClass@d2cc05a]" name="validateEmployeeNames" duration-ms="11" started-at="2018-08-21T02:29:16Z" depends-on-methods="com.testmethods.TestClass.validateEmployeeCount" finished-at="2018-08-21T02:29:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmployeeNames -->
+        <test-method status="PASS" signature="validateDepartmentNames()[pri:0, instance:com.testmethods.TestClass@d2cc05a]" name="validateDepartmentNames" duration-ms="2" started-at="2018-08-21T02:29:16Z" depends-on-methods="com.testmethods.TestClass.validateEmployeeCount" finished-at="2018-08-21T02:29:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDepartmentNames -->
+        <test-method status="PASS" signature="validateEmployeeBrokenImage()[pri:0, instance:com.testmethods.TestClass@d2cc05a]" name="validateEmployeeBrokenImage" duration-ms="4197" started-at="2018-08-21T02:29:16Z" depends-on-methods="com.testmethods.TestClass.validateEmployeeCount" finished-at="2018-08-21T02:29:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmployeeBrokenImage -->
+        <test-method status="PASS" signature="validateURLHttpStatusCode()[pri:0, instance:com.testmethods.TestClass@d2cc05a]" name="validateURLHttpStatusCode" duration-ms="10496" started-at="2018-08-21T02:29:20Z" depends-on-methods="com.testmethods.TestClass.validateEmployeeCount" finished-at="2018-08-21T02:29:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateURLHttpStatusCode -->
+        <test-method status="PASS" signature="validateEmployeeOverlayInfo()[pri:0, instance:com.testmethods.TestClass@d2cc05a]" name="validateEmployeeOverlayInfo" duration-ms="32348" started-at="2018-08-21T02:29:31Z" depends-on-methods="com.testmethods.TestClass.validateEmployeeCount" finished-at="2018-08-21T02:30:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmployeeOverlayInfo -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.testmethods.TestClass@d2cc05a]" name="afterTest" is-config="true" duration-ms="2147" started-at="2018-08-21T02:30:03Z" finished-at="2018-08-21T02:30:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.testmethods.TestClass@d2cc05a]" name="afterSuite" is-config="true" duration-ms="416" started-at="2018-08-21T02:30:05Z" finished-at="2018-08-21T02:30:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.testmethods.TestClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
