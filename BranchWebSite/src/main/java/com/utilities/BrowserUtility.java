@@ -9,7 +9,7 @@ import org.testng.Assert;
 public class BrowserUtility {
 	
 	protected WebDriver driver;
-	private static long WEBDRIVER_TIME_OUT = 60;
+	private static long WEBDRIVER_TIME_OUT = 120;
 	private static WebDriverWait wait;
 	
 	/**
