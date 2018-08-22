@@ -95,6 +95,8 @@ public class Reporter {
     	case"pass":
     		node.pass(MarkupHelper.createTable(data));
     		break;
+    	default:
+    		Assert.fail("Not valid test status");
     	}
     }
     

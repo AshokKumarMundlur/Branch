@@ -19,7 +19,6 @@ public class CommonMethods {
         HttpURLConnection connection = (HttpURLConnection)httpUrl.openConnection();
         connection.setRequestMethod("GET");
         connection.connect();
-        return connection.getResponseCode();
-        
+        return connection.getResponseCode();   
 	}
 }

@@ -27,7 +27,7 @@ public class BrowserUtility {
 	 * @return Web-driver
 	 */
 	public WebDriver getCurrentDriver(){
-		Assert.assertNotNull(driver, "Fire fox driver not initialized or null");
+		Assert.assertNotNull(driver, "Fire-fox driver not initialized or null");
 		return driver;
 	}
 	
@@ -44,7 +44,7 @@ public class BrowserUtility {
 	 * @return WebDriverWait interface
 	 */
 	public static WebDriverWait getWait() {
-		Assert.assertNotNull(wait, "Webdriver wait object is not initialized");
+		Assert.assertNotNull(wait, "WebDriverWait object is not initialized");
 		return wait;
 	}
 

@@ -17,13 +17,13 @@ public class TestClass {
 	BrowserUtility browser;
 	TeamPage teamPage;
 
+	
 	@BeforeTest
 	public void beforeTest() throws Throwable {
 		Reporter.generateReportFile();
 		browser = new BrowserUtility();
 		browser.launch();
-		new PageHelper(browser.getCurrentDriver());
-		
+		new PageHelper(browser.getCurrentDriver());	
 	}
 
 	@Test(priority = 1)
@@ -34,10 +34,9 @@ public class TestClass {
 		google.search("Branch.io");
 		google.openBranchSite();	
 		BranchHomePage branchHomePage = new BranchHomePage();
-		branchHomePage.navigateToTeamPage();
-		
+		branchHomePage.navigateToTeamPage();		
 	}
-
+	
 	@Test(priority = 2, dependsOnMethods = "searchBranchWebsite")
 	public void validateEmployeeCount() throws Throwable {
 		Reporter.creatTest("Validate Employee count",

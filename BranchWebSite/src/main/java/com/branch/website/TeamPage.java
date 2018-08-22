@@ -16,9 +16,10 @@ import com.utilities.PageHelper;
 import com.utilities.Reporter;
 
 public class TeamPage {
-
-	private By waper = By.className("wrap");
-	private By infoBlocks = By.className("info-block");
+	
+	//employee block locators
+	private By waper = By.className("wrap"); 
+	private By infoBlocks = By.className("info-block"); 
 	private By imageBlocks = By.className("image-block");
 	private By employeeNameLabel = By.tagName("h2");
 	

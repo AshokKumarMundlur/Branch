@@ -57,7 +57,7 @@ public class PageHelper {
 	}
 
 	/**
-	 * 
+	 * method will get the WebElement based on by locator and scroll to the WebElement
 	 * @param locator
 	 * @return
 	 * @throws Throwable
@@ -70,6 +70,12 @@ public class PageHelper {
 		return element;
 	}
 	
+	/**
+	 * method will scroll to the WebElement
+	 * @param element
+	 * @return WebElement
+	 * @throws Throwable
+	 */
 	public static WebElement scrollTo(WebElement element) throws Throwable {
 		Assert.assertNotNull("Cannot scroll, WebElement is null", element);
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) webDriver;
@@ -78,9 +84,9 @@ public class PageHelper {
 	}
 	
 	/**
-	 * 
+	 * method will wait until the element is click-able and return the WebElement
 	 * @param element
-	 * @return
+	 * @return WebElement
 	 * @throws Throwable
 	 */
 	public static WebElement elementClickable(WebElement element) throws Throwable {
@@ -88,9 +94,9 @@ public class PageHelper {
 	}
 	
 	/**
-	 * 
+	 * method returns the List of WebElements based on the By locator
 	 * @param locator
-	 * @return
+	 * @return List<WebElement>
 	 * @throws Throwable
 	 */
 	public static List<WebElement> getElements(By locator) throws Throwable {
@@ -98,16 +104,20 @@ public class PageHelper {
 	}
 	
 	/**
-	 * 
+	 * method to get the text of child element from parent element
 	 * @param element
 	 * @param byTagName
-	 * @return
+	 * @return String 
 	 * @throws Throwable
 	 */
 	public static String getText(WebElement element, String byTagName)throws Throwable {
 		return element.findElement(By.tagName(byTagName)).getText().trim();
 	}
 	
+	/**
+	 * method to mouse over on WebElement
+	 * @param element
+	 */
 	public static void mouseOverOnElement(WebElement element){
 		Actions builder = new Actions(webDriver);
 		builder.moveToElement(element).build().perform();

@@ -10,7 +10,7 @@ public class BranchHomePage {
 	private By cookiesOptOut = By.id("CybotCookiebotDialogBodyButtonDecline");
 	
 	/**
-	 * method to close cookies pop up, scroll to team link and navigate to team page  
+	 * method to close cookies pop up and scroll to team link and navigate to team page  
 	 * @throws Throwable
 	 */
 	public void navigateToTeamPage() throws Throwable {
